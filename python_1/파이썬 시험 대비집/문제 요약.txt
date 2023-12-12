@@ -1,0 +1,52 @@
+- 각 자료형마다 어떤 type값이 출력되는가?
+- list, tuple처럼 괄호 모양 같은 특징이 무엇이 다른가
+=>자료형에 대한 차이 1문제
+
+단순 자료형 (int, boolean, string, float)
+list = [10,20 ...]
+tuple = ()
+dictionary = {key:value}
+set= {1, 2,7, 4, 3}
+
+print(type(자료형))
+=> 자료형마다 다른 결과 
+
+>>> type( 123 )
+<class 'int'>
+
+>>> type( 123.123 )
+<class 'float'>
+
+>>> type( 'abc' )
+<class 'str'>
+
+>>> type( [ 1, 2, 3 ] )
+<class 'list'>
+
+>>> type( ( 1, 2, 3 ) )
+<class 'tuple'>
+
+>>> type( True )
+<class 'bool'>
+
+>>>type({1, 2, 3})
+<class 'set'>
+
+print(type({"a": 1}))
+<class 'dict'>
+
+
+
+#https://wikidocs.net/16043
+
+
+-list 이론 관련 몇개(박민하 t)
+-리스트 컴프리헨션으로 초기화시 값 출력
+
+-리스트 슬라이싱
+list = [1, 2, 3, 4, 5] # 인덱스는 0부터 시작
+print(list([1:3])) #2, 3출력
+print(list[:3])#1,2,3 출력
+print(list[1:])#2,3,4,5
+
+둘 다 차있을 때 하나씩만 차있을 때
